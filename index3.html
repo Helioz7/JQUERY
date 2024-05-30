@@ -46,16 +46,25 @@
                 if (isArray) {
                     for(let fact of data) {
                         let factText = fact.text;
-                        factsContainer.insertAdjacentHTML('beforeend', `<p>${factText}</p><button>LIKE</button`);
+                        factsContainer.insertAdjacentHTML('beforeend', `<p>${factText}</p><button onclick="console.log(this.previousElementSibling)">LIKE</button`);
                     }
                 } else {
                     let factText = data.text;
-                    factsContainer.insertAdjacentHTML('beforeend', `<p>${factText}</p><button>LIKE</button`);
+                    factsContainer.insertAdjacentHTML('beforeend', `<p>${factText}</p><button onclick="console.log(this.previousElementSibling)">LIKE</button`);
                 }
             })
         };
         
         getFact();
+
+        sessionStorage.setItem("red", "blue");
+        let data = sessionStorage.getItem("red");
+
+        
+
+        
+
+
 
        
     </script>

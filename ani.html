@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js" integrity="sha256-J8ay84czFazJ9wcTuSDLpPmwpMXOm573OUtZHPQqpEU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="animate">la couleur</button>
+    <div class="box">boite</div>
+
+    <script>
+        $(document).ready(function(){
+            $("#animate").click(function(){
+                $(".box").animate({ backgroundColor: "yellow" }, 5000);
+            });
+        });
+    </script>
+
+</body>
+</html>
+
+
+Utilisez la méthode .animate() pour animer la largeur d'un élément div avec la classe box afin qu'elle passe de 100px à 300px en 2 secondes.
+
+Utilisez la méthode .animate() pour déplacer un élément div avec la classe box de sa position actuelle à 400px à droite en 3 secondes.
+(2 points)
+
+Utilisez la méthode .animate() pour animer simultanément la largeur et la hauteur d'un élément div avec la classe box afin qu'elles passent de 100px à 200px en 4 secondes.
+
+Utilisez la méthode .animate() pour animer l'opacité d'un élément div avec la classe box afin qu'elle passe de 1 à 0.2 en 2.5 secondes.
+
+Utilisez la méthode '.animate()' avec jQuery pour animer la couleur d'arrière-plan d'un élément 'div' avec la classe 'box' afin qu'elle passe de bleu à jaune en 5 secondes.
