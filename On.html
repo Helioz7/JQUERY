@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Action</title>
+    <style>
+        .bg-info {
+            background-color: #17a2b8; 
+            color: rgb(253, 6, 6);
+        }
+    </style>
+</head>
+<body>
+    <div class="content" id="targetElement">Text</div>
+    <button id="multipleAction" class="btn">Multiple</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#multipleAction").click(function(){
+                $("#targetElement").addClass("bg-info");
+                $("#targetElement").text("Texte");
+                $(this).prop("disabled", true);
+            });
+        });
+    </script>
+</body>
+</html>
